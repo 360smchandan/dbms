@@ -35,6 +35,7 @@ This application is a comprehensive software system designed to manage and organ
       
 #### Backend
         Modify the connector config in backend/app/__init__.py
+        Run the run.py file
         
 ## Run Locally
 
@@ -47,7 +48,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd dbms
 ```
 
 Install dependencies and complete the setup
@@ -59,7 +60,7 @@ Install dependencies and complete the setup
 Start the server
 
 ```bash
-  npm run start
+  npm start
 ```
 
 Congrats you have successfully setup the app!!!!
