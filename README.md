@@ -18,16 +18,16 @@ This application is a comprehensive software system designed to manage and organ
 ## Setup
 
 #### Database
-        We've used MariaDB for this application, to download the latest version visit(https://mariadb.org/download/) or any other equivalent SQL database should work.
-        Import the already created db(dummy.sql) using HeidiSQL(GUI for MariaDB)
-        Or if you want to create the database from scratch, follow these steps
-            Create a spotify app here(https://developer.spotify.com/documentation/web-api) and paste the client-id and client-secret in client-id.txt and client-secret.txt
-            Run auth.py once this fills out our spotify access token which we use to insert metadata into our database.
-            Modify the artists.txt as you wish depending on whose info you need in your database.
-            Run serv.py also modify the connector config to your db's config
-            Now our metadata is inserted, now to make those songs playable we insert the yt links of those songs and embed them into our app.
-            Run yt.js
-            Now our database setup is complete.
+      -   We've used MariaDB for this application, to download the latest version visit(https://mariadb.org/download/) or any other equivalent SQL database should work.
+      -   Import the already created db(dummy.sql) using HeidiSQL(GUI for MariaDB)
+      -   Or if you want to create the database from scratch, follow these steps
+            - Create a spotify app here(https://developer.spotify.com/documentation/web-api) and paste the client-id and client-secret in client-id.txt and client-secret.txt
+            - Run auth.py once this fills out our spotify access token which we use to insert metadata into our database.
+            - Modify the artists.txt as you wish depending on whose info you need in your database.
+            - Run serv.py also modify the connector config to your db's config
+            - Now our metadata is inserted, now to make those songs playable we insert the yt links of those songs and embed them into our app.
+            - Run yt.js
+            - Now our database setup is complete.
 
       
 #### Backend
@@ -38,7 +38,7 @@ This application is a comprehensive software system designed to manage and organ
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/360smchandan/dbms.git
 ```
 
 Go to the project directory
@@ -58,4 +58,9 @@ Start the server
 ```bash
   npm run start
 ```
+
+Congrats you have successfully setup the app!!!!
+## Authors
+
+- [@360chandansm](https://www.github.com/360smchandan)
 
