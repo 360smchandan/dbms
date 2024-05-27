@@ -20,20 +20,6 @@ except mariadb.Error as e:
 
 cur = conn.cursor()
 
-def search_youtube(search_query):
-    api_key = "AIzaSyA-5WkUvAZsYYNys9H6Dlz4fsGTqRqzToc"
-    url = f"https://www.googleapis.com/youtube/v3/search?q={search_query}&key={api_key}&part=snippet&type=video&maxResults=1"
-    try:
-        response = r.get(url)
-        response.raise_for_status()
-        data = response.json()
-        if data.get('items'):
-            first_video_id = data['items'][0]['id']['videoId']
-            return first_video_id
-        else:
-            return "No videos found."
-    except r.exceptions.RequestException as e:
-            return ":("
 def do_request():
     with open('artists.txt', 'r') as file:
         contents = file.read()
