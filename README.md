@@ -1,70 +1,61 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Songs Database
 
-## Available Scripts
 
-In the project directory, you can run:
+This application is a comprehensive software system designed to manage and organize vast music collections. It features secure user authentication, detailed song catalog management, search and filtering, playlist CRUD, and integrated audio playback. This application is accessible via responsive web design. Technologically it leverages React for the frontend, Flask for the backend, and MariaDB for the database. This enables efficient song management, discovery, and an enhanced listening experience.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Login](https://github.com/360smchandan/dbms/assets/15228512/ff28d4ed-61a6-4d57-a8e3-141bcacc1686)
+![Home](https://github.com/360smchandan/dbms/assets/15228512/338be554-a797-4751-b722-0a0a28b3947d)
+![Playlist](https://github.com/360smchandan/dbms/assets/15228512/75d74ad9-19e5-4493-9a6f-c0610abc573f)
+![Search](https://github.com/360smchandan/dbms/assets/15228512/1367ec5e-e988-4431-a999-33c999fcddbd)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Database
+        We've used MariaDB for this application, to download the latest version visit(https://mariadb.org/download/) or any other equivalent SQL database should work.
+        Import the already created db(dummy.sql) using HeidiSQL(GUI for MariaDB)
+        Or if you want to create the database from scratch, follow these steps
+            Create a spotify app here(https://developer.spotify.com/documentation/web-api) and paste the client-id and client-secret in client-id.txt and client-secret.txt
+            Run auth.py once this fills out our spotify access token which we use to insert metadata into our database.
+            Modify the artists.txt as you wish depending on whose info you need in your database.
+            Run serv.py also modify the connector config to your db's config
+            Now our metadata is inserted, now to make those songs playable we insert the yt links of those songs and embed them into our app.
+            Run yt.js
+            Now our database setup is complete.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+      
+#### Backend
+        Modify the connector config in backend/app/__init__.py
+        
+## Run Locally
 
-### `npm run eject`
+Clone the project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+  git clone https://link-to-project
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Go to the project directory
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  cd my-project
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install dependencies and complete the setup
 
-## Learn More
+```bash
+  npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start the server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  npm run start
+```
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
