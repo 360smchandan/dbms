@@ -6,13 +6,16 @@ This application is a comprehensive software system designed to manage and organ
 
 
 
-
 ## Screenshots
-
+#### Login
 ![Login](https://github.com/360smchandan/dbms/assets/15228512/ff28d4ed-61a6-4d57-a8e3-141bcacc1686)
+#### Home
 ![Home](https://github.com/360smchandan/dbms/assets/15228512/338be554-a797-4751-b722-0a0a28b3947d)
+#### Playlist
 ![Playlist](https://github.com/360smchandan/dbms/assets/15228512/75d74ad9-19e5-4493-9a6f-c0610abc573f)
+#### Search
 ![Search](https://github.com/360smchandan/dbms/assets/15228512/1367ec5e-e988-4431-a999-33c999fcddbd)
+
 
 
 ## Setup
